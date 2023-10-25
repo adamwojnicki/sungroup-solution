@@ -1,0 +1,17 @@
+.button {
+  border: 1px solid var(--dark);
+  color: var(--dark);
+  padding: 10px 24px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.primary {
+  background-color: var(--dark);
+  color: #fff;
+}
+
+.primary-light {
+  background-color: #dbd3cb;
+  color: var(--dark);
+}

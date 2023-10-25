@@ -1,0 +1,21 @@
+.hero {
+  background-image: url(/hero_img.jpeg);
+  background-size: cover;
+  background-position: right;
+  min-height: 500px;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  color: var(--light);
+}
+.textContent {
+  max-width: 750px;
+}
+.eyebrow {
+  margin-bottom: 16px;
+}
+.headline {
+  font-size: 3.75rem;
+  font-weight: 300;
+  font-family: "Cupra Light", Arial, Helvetica, sans-serif;
+  margin-bottom: 48px;
+}

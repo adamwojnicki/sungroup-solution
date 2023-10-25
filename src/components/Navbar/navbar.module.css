@@ -1,0 +1,32 @@
+.navbar {
+  background-color: var(--light);
+  padding: 30px 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuItem {
+  font-weight: 300;
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.menuItem:hover {
+  text-decoration: underline;
+}
+
+.menuItem + .menuItem {
+  margin-left: 32px;
+}
+
+.ctas {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+/* TODO: MOBILE VIEW */
