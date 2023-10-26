@@ -1,5 +1,5 @@
 .button {
-  border: 1px solid var(--dark);
+  font-family: var(--font-sans);
   color: var(--dark);
   padding: 10px 24px;
   text-decoration: none;
@@ -8,10 +8,16 @@
 
 .primary {
   background-color: var(--dark);
+  border: 1px solid var(--dark);
   color: #fff;
+}
+
+.secondary {
+  border: 1px solid var(--dark);
 }
 
 .primary-light {
   background-color: #dbd3cb;
   color: var(--dark);
+  border: 1px solid var(--light);
 }

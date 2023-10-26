@@ -13,7 +13,9 @@ const Hero = () => {
             Wejdź do świata Cupra. Poznaj prawdziwą moc i sportowego ducha
             marki.
           </h1>
-          <Button variant="primary-light">Ruszaj na jazdę testową</Button>
+          <Button href="#" variant="primary-light">
+            Ruszaj na jazdę testową
+          </Button>
         </div>
       </Container>
     </section>

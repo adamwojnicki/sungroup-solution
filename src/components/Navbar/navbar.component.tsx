@@ -34,8 +34,12 @@ const Navbar = () => {
           <div className={styles.ctas}>
             {/* TODO: FIX SPACING */}
             <strong>+48 58 506 65 65</strong>
-            <Button variant="primary">Zapytaj o ofertę</Button>
-            <Button variant="secondary">Umów jazdę próbną</Button>
+            <Button href="#" variant="primary">
+              Zapytaj o ofertę
+            </Button>
+            <Button href="#" variant="secondary">
+              Umów jazdę próbną
+            </Button>
           </div>
         </div>
       </Container>

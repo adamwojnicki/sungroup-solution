@@ -1,0 +1,57 @@
+.mosaic {
+  padding: 104px 0;
+  background-color: var(--dark-bg);
+  color: #fff;
+}
+
+.mosaic h2 {
+  font-size: 3.75rem;
+  margin-bottom: 16px;
+}
+
+.mosaic h3 {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.mosaic p {
+  font-size: 1.25rem;
+}
+
+.mosaic a {
+  margin-top: 32px;
+}
+
+.mosaic figcaption {
+  margin-top: 32px;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "txt-top ."
+    "fig-left fig-right"
+    "txt-btm fig-right";
+  gap: 2rem;
+}
+
+.txtTop {
+  grid-area: txt-top;
+  margin-bottom: 64px;
+  max-width: 550px;
+}
+
+.figLeft {
+  grid-area: fig-left;
+  margin-bottom: 120px;
+}
+
+.txtBtm {
+  grid-area: txt-btm;
+  max-width: 550px;
+}
+
+.figRight {
+  grid-area: fig-right;
+  padding-top: 2rem;
+}

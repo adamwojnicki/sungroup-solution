@@ -1,7 +1,9 @@
 :root {
   --light: #f5f5f5;
   --dark: #242221;
+  --dark-bg: #1b1b1b;
   --font-sans: "Cupra", Arial, Helvetica, sans-serif;
+  --font-sans-light: "Cupra Light", Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -11,7 +13,7 @@
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-sans-light);
   color: var(--dark);
   min-height: 100vh;
   display: flex;
@@ -26,4 +28,10 @@ header {
 
 footer {
   margin-top: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
