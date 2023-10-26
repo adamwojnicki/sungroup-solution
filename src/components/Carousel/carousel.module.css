@@ -1,0 +1,70 @@
+.carousel {
+  padding: 104px 0;
+  position: relative;
+  background-color: var(--light);
+}
+
+.slide {
+  max-width: 1066px;
+}
+
+.slide h3 {
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 3rem;
+}
+
+.slide img {
+  margin: auto;
+}
+
+.slide a {
+  display: table;
+  margin: auto;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.detailsRow {
+  display: flex;
+  margin: 48px auto;
+}
+
+.detailsRow > p {
+  width: 140px;
+  font-size: 0.875rem;
+}
+
+.detailsRow > p strong {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+}
+
+.detailsRow > p + p {
+  margin-left: 48px;
+}
+
+.prevSlide,
+.nextSlide {
+  opacity: 0.5;
+}
+
+.prevBtn,
+.nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 9999;
+}
+
+.prevBtn {
+  left: calc((100vw - 1066px) / 2);
+}
+
+.nextBtn {
+  right: calc((100vw - 1066px) / 2);
+}
