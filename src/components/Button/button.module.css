@@ -19,5 +19,5 @@
 .primary-light {
   background-color: #dbd3cb;
   color: var(--dark);
-  border: 1px solid var(--light);
+  border: 1px solid #dbd3cb;
 }

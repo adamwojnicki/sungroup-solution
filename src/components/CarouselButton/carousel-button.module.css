@@ -1,1 +1,10 @@
-/* TODO: STYLE NEXT PREV BUTTONS */
+.button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #fff;
+}
+
+.button img {
+  margin: auto;
+}

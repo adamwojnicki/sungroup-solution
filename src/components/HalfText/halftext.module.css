@@ -1,0 +1,44 @@
+.halfText {
+  padding: 64px 0;
+  background-color: var(--dark);
+  color: #fff;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexReverse {
+  flex-direction: row-reverse;
+}
+
+.figure {
+  max-width: 787px;
+  width: 50%;
+}
+
+.textContent {
+  width: 50%;
+  padding-left: 117px;
+  padding-bottom: 64px;
+  padding-right: 117px;
+  background-color: var(--dark);
+  height: auto;
+  margin-bottom: auto;
+}
+
+.moveLeft {
+  transform: translateX(-70px);
+}
+
+.moveRight {
+  transform: translateX(70px);
+}
+
+.paddingTop {
+  padding-top: 170px;
+}
+
+.paddingBottom {
+  padding-bottom: 170px;
+}
