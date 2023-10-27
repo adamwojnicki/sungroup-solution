@@ -5,6 +5,7 @@ import HalfText from "@/components/HalfText";
 import Button from "@/components/Button";
 import Eyebrow from "@/components/Eyebrow";
 import Headline from "@/components/Headline";
+import Form from "@/components/Form";
 
 import feat1 from "@/assets/feat_1.png";
 import feat2 from "@/assets/feat_2.png";
@@ -43,6 +44,7 @@ export default function Home() {
           Umów jazdę próbną
         </Button>
       </HalfText>
+      <Form />
     </main>
   );
 }
