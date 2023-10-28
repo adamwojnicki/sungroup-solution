@@ -3,3 +3,7 @@
   margin: auto;
   padding: 0 2rem;
 }
+
+.containerNarrow {
+  max-width: 670px;
+}

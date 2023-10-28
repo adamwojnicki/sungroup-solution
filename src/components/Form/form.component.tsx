@@ -3,31 +3,59 @@ import styles from "./form.module.css";
 
 import Container from "../Container";
 
+import CustomSelect from "../CustomSelect";
+
+import Button from "../Button";
+
 const Form = () => {
   return (
     <section className={styles.form}>
-      <Container>
-        <p>Jazda próbna</p>
-        <h2>Umów się na bezpłatną jazdę próbną</h2>
-        <form onSubmit={() => console.log("submit")}>
-          <div className="field">
+      <Container narrow>
+        <p className={styles.eyebrow}>Jazda próbna</p>
+        <h2 className={styles.headline}>
+          Umów się na bezpłatną jazdę&nbsp;próbną
+        </h2>
+
+        <div className={styles.field}>
+          <CustomSelect />
+        </div>
+
+        <form>
+          <div className={styles.field}>
             <label htmlFor="name">Imię *</label>
-            <input type="text" id="name" name="name" />
+            <input type="text" id="name" name="name" placeholder="Imię *" />
           </div>
-          <div className="field">
+          <div className={styles.field}>
             <label htmlFor="secname">Nazwisko (opcjonalnie)</label>
-            <input type="text" id="secname" name="secname" />
+            <input
+              type="text"
+              id="secname"
+              name="secname"
+              placeholder="Nazwisko (opcjonalnie)"
+            />
           </div>
-          <div className="field">
-            <label htmlFor="secname">Adren e-mail *</label>
-            <input type="email" id="email" name="email" />
+          <div className={styles.field}>
+            <label htmlFor="secname">Adres e-mail *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Adres e-mail *"
+            />
           </div>
-          <div className="field">
+          <div className={styles.field}>
             <label htmlFor="phone">Nr. telefonu *</label>
-            <input type="text" id="phone" name="phone" />
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="Nr. telefonu *"
+            />
           </div>
-          <p>* Pole wymagane</p>
-          <div className="legal">
+          <div className={styles.field}>
+            <p>* Pole wymagane</p>
+          </div>
+          <div className={styles.legal}>
             <p>
               Wysłanie uzupełnionego formularza oznacza Twoją zgodę na kontakt w
               celu przedstawienia informacji handlowej w wybrany przez Ciebie
@@ -38,7 +66,7 @@ const Form = () => {
               przedstawiania Ci atrakcyjnych ofert / promocji produktów,
               akcesoriów i usług marki CUPRA w przyszłości.
             </p>
-            <div className="legal-field">
+            <div className={styles.legalField}>
               <input type="checkbox" name="marketing" id="marketing" />
               <label htmlFor="marketing">
                 Zgadzam się na przetwarzanie moich danych osobowych przez
@@ -49,7 +77,7 @@ const Form = () => {
                 motoryzacyjnych za pomocą:
               </label>
             </div>
-            <div className="legal-field">
+            <div className={styles.legalField}>
               <input
                 type="checkbox"
                 name="marketing-email"
@@ -57,7 +85,7 @@ const Form = () => {
               />
               <label htmlFor="marketing-email">E-mail</label>
             </div>
-            <div className="legal-field">
+            <div className={styles.legalField}>
               <input
                 type="checkbox"
                 name="marketing-phone"
@@ -65,7 +93,7 @@ const Form = () => {
               />
               <label htmlFor="marketing-phone">Telefon</label>
             </div>
-            <div className="legal-field">
+            <div className={styles.legalField}>
               <input type="checkbox" name="marketing-sms" id="marketing-sms" />
               <label htmlFor="marketing-sms">Wiadomość SMS/MMS</label>
             </div>
@@ -91,6 +119,13 @@ const Form = () => {
               </a>
             </p>
           </div>
+          <Button
+            variant="primary"
+            href=""
+            style={{ display: "table", margin: "auto" }}
+          >
+            Umów jazdę próbną
+          </Button>
         </form>
       </Container>
     </section>

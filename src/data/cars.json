@@ -1,0 +1,27 @@
+[
+  {
+    "id": "cupra_formentor",
+    "display_name": "Cupra Formentor",
+    "img": "/cars/cupra_formentor.png"
+  },
+  {
+    "id": "cupra_leon",
+    "display_name": "Cupra Leon",
+    "img": "/cars/cupra_leon.png"
+  },
+  {
+    "id": "cupra_leon_sportstourer",
+    "display_name": "Cupra Leon Sportstourer",
+    "img": "/cars/cupra_leon_sportstourer.png"
+  },
+  {
+    "id": "cupra_ateca",
+    "display_name": "Cupra Ateca",
+    "img": "/cars/cupra_ateca.png"
+  },
+  {
+    "id": "cupra_born",
+    "display_name": "Cupra Born",
+    "img": "/cars/cupra_born.png"
+  }
+]

@@ -5,13 +5,19 @@ const Button = ({
   children,
   variant,
   href,
+  style,
 }: {
   children: React.ReactNode;
   variant: "primary" | "secondary" | "primary-light";
   href: string;
+  style?: object;
 }) => {
   return (
-    <a href={href} className={`${styles.button} ${styles[variant]}`}>
+    <a
+      href={href}
+      className={`${styles.button} ${styles[variant]}`}
+      style={{ ...style }}
+    >
       {children}
     </a>
   );

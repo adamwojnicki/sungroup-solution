@@ -1,1 +1,64 @@
-/* TODO: FOROM STYLES */
+.form {
+  padding: 104px 0;
+  background-color: var(--light);
+}
+
+.eyebrow,
+.headline {
+  text-align: center;
+  padding: 0 58px;
+}
+
+.eyebrow {
+  margin-bottom: 8px;
+}
+
+.headline {
+  font-size: 2.25rem;
+  margin-bottom: 64px;
+}
+
+.field {
+  padding: 0 58px;
+  width: 100%;
+  position: relative;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field input {
+  width: 100%;
+  border: none;
+  padding: 12px 0;
+  border-bottom: 1px solid #d5d5d5;
+  font-family: var(--font-sans);
+  background-color: transparent;
+}
+
+.field label {
+  display: none;
+}
+
+.legal {
+  font-size: 0.813rem;
+}
+
+.legal a {
+  color: var(--dark);
+}
+
+.legal p {
+  margin-bottom: 24px;
+}
+
+.legalField {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.legalField input {
+  margin-right: 12px;
+}
