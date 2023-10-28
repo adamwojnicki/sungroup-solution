@@ -12,7 +12,7 @@ interface Car {
   img: string;
 }
 
-const CustomSelect = () => {
+const CustomSelect = ({ setCarModel }: { setCarModel: Function }) => {
   const [dropdownActive, setDropdownActive] = useState(false);
   const [selectedCar, setSelectedCar] = useState(cars[0]);
   const [carList, setCarList] = useState<Car[]>([]);
@@ -22,6 +22,7 @@ const CustomSelect = () => {
     if (car) {
       setSelectedCar(car);
       setDropdownActive(false);
+      setCarModel(car.id);
     }
   };
 
@@ -29,6 +30,7 @@ const CustomSelect = () => {
     const filteredCars = cars.filter((car) => car.id !== selectedCar.id);
     setCarList(filteredCars);
   }, [selectedCar]);
+
   return (
     <div className={styles.customSelect}>
       {/* TODO BUTTON ARROW */}

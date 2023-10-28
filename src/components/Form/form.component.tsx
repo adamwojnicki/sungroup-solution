@@ -1,4 +1,6 @@
 "use client";
+import { useState } from "react";
+
 import styles from "./form.module.css";
 
 import Container from "../Container";
@@ -8,6 +10,33 @@ import CustomSelect from "../CustomSelect";
 import Button from "../Button";
 
 const Form = () => {
+  const [carModel, setCarModel] = useState("cupra_leon");
+  const [name, setName] = useState("");
+  const [secName, setSecName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [consent, setConsent] = useState(false);
+  const [consentEmail, setConsentEmail] = useState(false);
+  const [consentPhone, setConsentPhone] = useState(false);
+  const [consentSMS, setConsentSMS] = useState(false);
+
+  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    alert(
+      JSON.stringify({
+        carModel,
+        name,
+        secName,
+        email,
+        phone,
+        consent,
+        consentEmail,
+        consentPhone,
+        consentSMS,
+      })
+    );
+  };
+
   return (
     <section className={styles.form}>
       <Container narrow>
@@ -17,13 +46,20 @@ const Form = () => {
         </h2>
 
         <div className={styles.field}>
-          <CustomSelect />
+          <CustomSelect setCarModel={setCarModel} />
         </div>
 
         <form>
           <div className={styles.field}>
             <label htmlFor="name">Imię *</label>
-            <input type="text" id="name" name="name" placeholder="Imię *" />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Imię *"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </div>
           <div className={styles.field}>
             <label htmlFor="secname">Nazwisko (opcjonalnie)</label>
@@ -32,6 +68,7 @@ const Form = () => {
               id="secname"
               name="secname"
               placeholder="Nazwisko (opcjonalnie)"
+              onChange={(e) => setSecName(e.target.value)}
             />
           </div>
           <div className={styles.field}>
@@ -50,6 +87,7 @@ const Form = () => {
               id="phone"
               name="phone"
               placeholder="Nr. telefonu *"
+              onChange={(e) => setPhone(e.target.value)}
             />
           </div>
           <div className={styles.field}>
@@ -67,7 +105,13 @@ const Form = () => {
               akcesoriów i usług marki CUPRA w przyszłości.
             </p>
             <div className={styles.legalField}>
-              <input type="checkbox" name="marketing" id="marketing" />
+              <input
+                type="checkbox"
+                name="marketing"
+                id="marketing"
+                onChange={() => setConsent(!consent)}
+                checked={consent}
+              />
               <label htmlFor="marketing">
                 Zgadzam się na przetwarzanie moich danych osobowych przez
                 Plichta spółka z ograniczoną odpowiedzialnością Spółka
@@ -82,6 +126,8 @@ const Form = () => {
                 type="checkbox"
                 name="marketing-email"
                 id="marketing-email"
+                onChange={() => setConsent(!consentEmail)}
+                checked={consentEmail}
               />
               <label htmlFor="marketing-email">E-mail</label>
             </div>
@@ -90,11 +136,19 @@ const Form = () => {
                 type="checkbox"
                 name="marketing-phone"
                 id="marketing-phone"
+                onChange={() => setConsent(!consentPhone)}
+                checked={consentPhone}
               />
               <label htmlFor="marketing-phone">Telefon</label>
             </div>
             <div className={styles.legalField}>
-              <input type="checkbox" name="marketing-sms" id="marketing-sms" />
+              <input
+                type="checkbox"
+                name="marketing-sms"
+                id="marketing-sms"
+                onChange={() => setConsent(!consentSMS)}
+                checked={consentSMS}
+              />
               <label htmlFor="marketing-sms">Wiadomość SMS/MMS</label>
             </div>
             <p>
@@ -119,13 +173,12 @@ const Form = () => {
               </a>
             </p>
           </div>
-          <Button
-            variant="primary"
-            href=""
-            style={{ display: "table", margin: "auto" }}
+          <button
+            className={styles.formButton}
+            onClick={(e) => handleSubmit(e)}
           >
             Umów jazdę próbną
-          </Button>
+          </button>
         </form>
       </Container>
     </section>

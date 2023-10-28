@@ -9,7 +9,7 @@ const Button = ({
 }: {
   children: React.ReactNode;
   variant: "primary" | "secondary" | "primary-light";
-  href: string;
+  href?: string;
   style?: object;
 }) => {
   return (

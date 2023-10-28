@@ -62,3 +62,15 @@
 .legalField input {
   margin-right: 12px;
 }
+
+.formButton {
+  font-family: var(--font-sans);
+  color: var(--dark);
+  padding: 10px 24px;
+  text-decoration: none;
+  display: table;
+  margin: auto;
+  background-color: var(--dark);
+  border: 1px solid var(--dark);
+  color: #fff;
+}
