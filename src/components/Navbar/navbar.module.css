@@ -48,6 +48,12 @@
   display: none;
 }
 
+@media screen and (max-width: 1440px) {
+  .menuItem + .menuItem {
+    margin-left: 16px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .nav {
     display: none;
@@ -79,6 +85,7 @@
     text-decoration: none;
     text-align: center;
   }
+
   .mobileMenuItem + .mobileMenuItem {
     margin-top: 32px;
   }

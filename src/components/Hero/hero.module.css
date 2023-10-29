@@ -19,6 +19,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .hero {
+    background-position: bottom;
+  }
   .headline {
     font-size: 2rem;
   }
