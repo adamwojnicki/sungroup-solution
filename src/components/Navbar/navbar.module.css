@@ -33,6 +33,20 @@
 .hamburger {
   display: none;
 }
+.mobileMenu {
+  display: none;
+}
+.mobileMenuActive {
+  display: none;
+}
+
+.tel {
+  color: var(--dark);
+  text-decoration: none;
+}
+.mobileCtas {
+  display: none;
+}
 
 @media screen and (max-width: 1200px) {
   .nav {
@@ -45,10 +59,51 @@
     border: none;
     background-color: transparent;
   }
+  .mobileMenu {
+    display: none;
+    padding-top: 30px;
+  }
+  .mobileMenu a {
+    font-size: 1.5rem;
+  }
+  .mobileMenuActive {
+    display: block;
+  }
+  .ctas {
+    gap: 16px;
+  }
+
+  .mobileMenuItem {
+    display: block;
+    color: var(--dark);
+    text-decoration: none;
+    text-align: center;
+  }
+  .mobileMenuItem + .mobileMenuItem {
+    margin-top: 32px;
+  }
+
+  .mobileNav .menuItem + .mobileNav .menuItem {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .ctas {
     display: none;
+  }
+  .mobileCtas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+  }
+  .mobileCtas a {
+    width: 300px;
+    text-align: center;
+  }
+
+  .mobileCtas a + a {
+    margin-top: 16px;
   }
 }

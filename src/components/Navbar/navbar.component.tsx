@@ -1,3 +1,6 @@
+"use client";
+import { useState } from "react";
+
 import Image from "next/image";
 
 import styles from "./navbar.module.css";
@@ -5,6 +8,7 @@ import Container from "../Container";
 import Button from "../Button";
 
 const Navbar = () => {
+  const [mobileNavActive, setMobileNavActive] = useState(false);
   return (
     <header className={styles.navbar}>
       <Container>
@@ -34,7 +38,9 @@ const Navbar = () => {
             </a>
           </nav>
           <div className={styles.ctas}>
-            <strong>+48 58 506 65 65</strong>
+            <a href="tel:#" className={styles.tel}>
+              <strong>+48 58 506 65 65</strong>
+            </a>
             <Button href="#" variant="primary">
               Zapytaj o ofertę
             </Button>
@@ -43,17 +49,51 @@ const Navbar = () => {
             </Button>
           </div>
           <div className={styles.hamburger}>
-            <button>
+            <button onClick={() => setMobileNavActive(!mobileNavActive)}>
               <Image
-                src="/bars-solid.svg"
+                src={mobileNavActive ? "/close.svg" : "/hamburger-menu.svg"}
                 alt="menu mobile"
-                width={36}
-                height={36}
+                width={48}
+                height={48}
               />
             </button>
           </div>
         </div>
       </Container>
+      <div
+        className={`
+          ${styles.mobileMenu} 
+          ${mobileNavActive ? styles.mobileMenuActive : ""}
+        `}
+      >
+        <Container narrow>
+          <nav className={styles.mobileNav}>
+            <a className={styles.mobileMenuItem} href="#">
+              Samochody
+            </a>
+            <a className={styles.mobileMenuItem} href="#">
+              Jazda próbna
+            </a>
+            <a className={styles.mobileMenuItem} href="#">
+              Oferta
+            </a>
+            <a className={styles.mobileMenuItem} href="#">
+              Salony Cupra
+            </a>
+          </nav>
+          <div className={styles.mobileCtas}>
+            <a href="tel:#" className={styles.tel}>
+              <strong>+48 58 506 65 65</strong>
+            </a>
+            <Button href="#" variant="primary">
+              Zapytaj o ofertę
+            </Button>
+            <Button href="#" variant="secondary">
+              Umów jazdę próbną
+            </Button>
+          </div>
+        </Container>
+      </div>
     </header>
   );
 };

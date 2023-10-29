@@ -19,6 +19,7 @@
   text-decoration: none;
   color: var(--dark);
   font-weight: 300;
+  display: inline-block;
 }
 
 .link + .link {
@@ -31,4 +32,20 @@
   display: flex;
   justify-content: flex-end;
   gap: 32px;
+}
+
+@media screen and (max-width: 1200px) {
+  .flex {
+    flex-direction: column-reverse;
+  }
+  .col + .col {
+    margin-bottom: 24px;
+  }
+  .link {
+    display: table;
+    margin: auto;
+  }
+  .link + .link {
+    border-left: none;
+  }
 }

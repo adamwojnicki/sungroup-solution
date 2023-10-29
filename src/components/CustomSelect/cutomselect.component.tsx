@@ -43,13 +43,23 @@ const CustomSelect = ({ setCarModel }: { setCarModel: Function }) => {
         aria-controls="select-dropdown"
         onClick={() => setDropdownActive(!dropdownActive)}
       >
+        <div className={styles.selectedCarLabel}>
+          <Image
+            className={styles.selectedCarImage}
+            src={selectedCar.img}
+            alt={selectedCar.display_name}
+            width={306}
+            height={139}
+          />
+          <p>{selectedCar.display_name}</p>
+        </div>
         <Image
-          src={selectedCar.img}
-          alt={selectedCar.display_name}
-          width={306}
-          height={139}
+          src="/arrow-down.svg"
+          width={10}
+          height={7}
+          alt="open"
+          className={styles.arrow}
         />
-        <p>{selectedCar.display_name}</p>
       </button>
       <ul
         role="listbox"

@@ -14,6 +14,13 @@
   border: 1px solid #d5d5d5;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding-right: 16px;
+}
+
+.selectedCarLabel {
+  display: flex;
+  align-items: center;
 }
 
 .selectDropdown {
@@ -51,7 +58,7 @@
   font-family: var(--font-sans);
 }
 
-.selectButton img {
+.selectCarImage img {
   max-width: 320px;
   width: 50%;
   height: auto;
@@ -60,5 +67,10 @@
 .selectDropdown img {
   max-width: 320px;
   width: 50%;
+  height: auto;
+}
+
+.arrow {
+  width: 10px;
   height: auto;
 }
