@@ -2,26 +2,41 @@
   {
     "id": "cupra_formentor",
     "display_name": "Cupra Formentor",
-    "img": "/cars/cupra_formentor.png"
+    "img": "/cars/cupra_formentor.png",
+    "short_desc": "Maksymalna prędkość: 204 KM/H Moc silnika: 150 KM",
+    "rate": 1439,
+    "gross_price": 127800
   },
   {
     "id": "cupra_leon",
     "display_name": "Cupra Leon",
-    "img": "/cars/cupra_leon.png"
+    "img": "/cars/cupra_leon.png",
+    "short_desc": "Maksymalna prędkość: 250 KM/H Moc silnika: 310 KM",
+    "rate": 1553,
+    "gross_price": 152400
   },
   {
     "id": "cupra_leon_sportstourer",
     "display_name": "Cupra Leon Sportstourer",
-    "img": "/cars/cupra_leon_sportstourer.png"
+    "img": "/cars/cupra_leon_sportstourer.png",
+    "short_desc": "Maksymalna prędkość: 250 KM/H Moc silnika: 310 KM",
+    "rate": 1601,
+    "gross_price": 156200
   },
   {
     "id": "cupra_ateca",
     "display_name": "Cupra Ateca",
-    "img": "/cars/cupra_ateca.png"
+    "img": "/cars/cupra_ateca.png",
+    "short_desc": "Maksymalna prędkość: 247 KM/H Moc silnika: 300 KM",
+    "rate": 2334,
+    "gross_price": 220700
   },
   {
     "id": "cupra_born",
     "display_name": "Cupra Born",
-    "img": "/cars/cupra_born.png"
+    "img": "/cars/cupra_born.png",
+    "short_desc": "Akumulator 58 kWh moc do 204 KM²",
+    "rate": 1943,
+    "gross_price": 179600
   }
 ]

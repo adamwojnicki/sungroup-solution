@@ -126,7 +126,7 @@ const Form = () => {
                 type="checkbox"
                 name="marketing-email"
                 id="marketing-email"
-                onChange={() => setConsent(!consentEmail)}
+                onChange={() => setConsentEmail(!consentEmail)}
                 checked={consentEmail}
               />
               <label htmlFor="marketing-email">E-mail</label>
@@ -136,7 +136,7 @@ const Form = () => {
                 type="checkbox"
                 name="marketing-phone"
                 id="marketing-phone"
-                onChange={() => setConsent(!consentPhone)}
+                onChange={() => setConsentPhone(!consentPhone)}
                 checked={consentPhone}
               />
               <label htmlFor="marketing-phone">Telefon</label>
@@ -146,7 +146,7 @@ const Form = () => {
                 type="checkbox"
                 name="marketing-sms"
                 id="marketing-sms"
-                onChange={() => setConsent(!consentSMS)}
+                onChange={() => setConsentSMS(!consentSMS)}
                 checked={consentSMS}
               />
               <label htmlFor="marketing-sms">Wiadomość SMS/MMS</label>
