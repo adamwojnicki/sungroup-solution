@@ -30,4 +30,25 @@
   gap: 32px;
 }
 
-/* TODO: MOBILE VIEW */
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger button {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ctas {
+    display: none;
+  }
+}

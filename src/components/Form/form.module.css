@@ -22,9 +22,6 @@
   padding: 0 58px;
   width: 100%;
   position: relative;
-}
-
-.field {
   margin-bottom: 20px;
 }
 
@@ -73,4 +70,10 @@
   background-color: var(--dark);
   border: 1px solid var(--dark);
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .field {
+    padding: 0;
+  }
 }

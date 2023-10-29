@@ -10,14 +10,16 @@ const Navbar = () => {
       <Container>
         <div className={styles.flex}>
           <div className="logo">
-            <Image
-              src="/cupra_logo.svg"
-              alt="Cupra logo"
-              width={142}
-              height={21}
-            />
+            <a href="#">
+              <Image
+                src="/cupra_logo.svg"
+                alt="Cupra logo"
+                width={142}
+                height={21}
+              />
+            </a>
           </div>
-          <nav>
+          <nav className={styles.nav}>
             <a className={styles.menuItem} href="#">
               Samochody
             </a>
@@ -32,7 +34,6 @@ const Navbar = () => {
             </a>
           </nav>
           <div className={styles.ctas}>
-            {/* TODO: FIX SPACING */}
             <strong>+48 58 506 65 65</strong>
             <Button href="#" variant="primary">
               Zapytaj o ofertę
@@ -40,6 +41,16 @@ const Navbar = () => {
             <Button href="#" variant="secondary">
               Umów jazdę próbną
             </Button>
+          </div>
+          <div className={styles.hamburger}>
+            <button>
+              <Image
+                src="/bars-solid.svg"
+                alt="menu mobile"
+                width={36}
+                height={36}
+              />
+            </button>
           </div>
         </div>
       </Container>

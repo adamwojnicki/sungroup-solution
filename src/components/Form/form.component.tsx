@@ -7,8 +7,6 @@ import Container from "../Container";
 
 import CustomSelect from "../CustomSelect";
 
-import Button from "../Button";
-
 const Form = () => {
   const [carModel, setCarModel] = useState("cupra_leon");
   const [name, setName] = useState("");
@@ -68,6 +66,7 @@ const Form = () => {
               id="secname"
               name="secname"
               placeholder="Nazwisko (opcjonalnie)"
+              value={secName}
               onChange={(e) => setSecName(e.target.value)}
             />
           </div>
@@ -78,6 +77,8 @@ const Form = () => {
               id="email"
               name="email"
               placeholder="Adres e-mail *"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className={styles.field}>
@@ -87,6 +88,7 @@ const Form = () => {
               id="phone"
               name="phone"
               placeholder="Nr. telefonu *"
+              value={phone}
               onChange={(e) => setPhone(e.target.value)}
             />
           </div>

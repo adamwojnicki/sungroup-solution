@@ -3,6 +3,7 @@
   height: 50px;
   border: none;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .button img {

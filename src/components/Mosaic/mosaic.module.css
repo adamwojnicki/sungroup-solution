@@ -55,3 +55,31 @@
   grid-area: fig-right;
   padding-top: 2rem;
 }
+@media screen and (max-width: 1200px) {
+  .grid {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mosaic h2 {
+    font-size: 3rem;
+  }
+  .grid {
+    grid-template-areas:
+      "txt-top"
+      "fig-left"
+      "fig-right"
+      "txt-btm";
+    gap: 2rem;
+  }
+  .txtTop {
+    margin-bottom: 2rem;
+  }
+  .figRight {
+    padding-top: 0;
+    margin-bottom: 2rem;
+  }
+  .figLeft {
+    margin-bottom: 2rem;
+  }
+}

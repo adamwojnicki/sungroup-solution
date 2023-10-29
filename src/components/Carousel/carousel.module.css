@@ -68,3 +68,34 @@
 .nextBtn {
   right: calc((100vw - 1066px) / 2);
 }
+
+@media screen and (max-width: 1200px) {
+  .slide {
+    max-width: 768px;
+  }
+  .prevBtn {
+    left: calc((100vw - 768px) / 2);
+  }
+  .nextBtn {
+    right: calc((100vw - 768px) / 2);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slide {
+    max-width: 100%;
+  }
+  .prevBtn {
+    left: 0;
+  }
+  .nextBtn {
+    right: 0;
+  }
+  .detailsRow {
+    flex-direction: column;
+  }
+  .detailsRow > p + p {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+}

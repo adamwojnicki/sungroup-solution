@@ -10,7 +10,7 @@ const Hero = () => {
         <div className={styles.textContent}>
           <p className={styles.eyebrow}>CUPRA Formentor</p>
           <h1 className={styles.headline}>
-            Wejdź do świata Cupra. Poznaj prawdziwą moc i sportowego ducha
+            Wejdź do świata Cupra. Poznaj prawdziwą moc i&nbsp;sportowego ducha
             marki.
           </h1>
           <Button href="#" variant="primary-light">

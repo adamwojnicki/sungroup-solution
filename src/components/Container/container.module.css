@@ -7,3 +7,21 @@
 .containerNarrow {
   max-width: 670px;
 }
+
+@media screen and (max-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
+  .containerNarrow {
+    max-width: 670px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+  .containerNarrow {
+    max-width: 670px;
+  }
+}
